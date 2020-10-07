@@ -12,17 +12,13 @@
 ## 01 - Config MYSQL
 	2.1 - mysql_secure_installation
 	
-	2.2 - Check git Status --> git status --> | Short Status --> git status -s
+	2.2 - GRANT ALL PRIVILEGES ON *.* TO {Usrrname Here}@localhost IDENTIFIED BY '{Password Here}';
 	
-	2.3 - GRANT ALL PRIVILEGES ON *.* TO {Usrrname Here}@localhost IDENTIFIED BY '{Password Here}';
+	2.3 - GRANT ALL PRIVILEGES ON * . * TO '{Username Here}'@'localhost';
 	
-	2.4 - GRANT ALL PRIVILEGES ON * . * TO '{Username Here}'@'localhost';
+	2.4 - FLUSH PRIVILEGES;
 	
-	2.5 - Commiting Without Staging --> gitcommit -a -m "Message Here"
-	
-	2.6 - FLUSH PRIVILEGES;
-	
-	2.7 - create database {Database Name Here}
+	2.5 - create database {Database Name Here}
 
 ## 03 - Get Wordpress
 
