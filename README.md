@@ -30,7 +30,7 @@
 
 	3.2 - Extract and Put Files into web root directory
   
- ## 04 - Get Wordpress
+ ## 04 - Config wp-config File
 
 	4.1 - Add database details ( database name, database user, password )
 
