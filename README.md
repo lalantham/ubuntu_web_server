@@ -36,8 +36,6 @@
 
  ## 05 - Setting up Let's Encrypt
 
-	5.1 - sudo add-apt-repository ppa:certbot/certbot
-
-	5.2 - sudo apt install python-certbot-apache
+	5.1 - sudo apt install python-certbot-apache
   
-  	5.3 - sudo certbot --apache -d example.com
+  	5.2 - sudo certbot --apache -d example.com
