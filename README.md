@@ -12,9 +12,9 @@
 ## 01 - Config MYSQL
 	2.1 - mysql_secure_installation
 	
-	2.2 - GRANT ALL PRIVILEGES ON *.* TO {Usrrname Here}@localhost IDENTIFIED BY '{Password Here}';
+	2.2 - CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 	
-	2.3 - GRANT ALL PRIVILEGES ON * . * TO '{Username Here}'@'localhost';
+	2.3 - GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 	
 	2.4 - FLUSH PRIVILEGES;
 	
