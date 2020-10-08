@@ -39,3 +39,9 @@
 	5.1 - sudo apt install python-certbot-apache
   
   	5.2 - sudo certbot --apache -d example.com
+
+## Related to Oracle Cloud VM Instanses
+	
+	* sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
+	* sudo netfilter-persistent save
+	* sudo systemctl restart apache2
