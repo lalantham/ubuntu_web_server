@@ -34,11 +34,13 @@
   
   	4.3 - Save as wp-config
 
- ## 05 - Setting up Let's Encrypt
+ ## 05 - Free SSL Certificate
+ 
+ 	5.1 - Add Domain to Cloudflare or Using Let's Encrypt
 
-	5.1 - sudo apt install python-certbot-apache
+	5.2 - sudo apt install python-certbot-apache
   
-  	5.2 - sudo certbot --apache -d example.com
+  	5.3 - sudo certbot --apache -d example.com
 
  ## 05 - Hardening Apache Server
 
