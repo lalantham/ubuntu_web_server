@@ -40,6 +40,31 @@
   
   	5.2 - sudo certbot --apache -d example.com
 
+ ## 05 - Hardening Apache Server
+
+	5.1 - Set Permisions
+  		* Folder Permision -> 755
+		* File Persmision -> 644 
+  	5.2 - Disable Directory & Signature Listing
+		* nano /etc/apache2/apache2.conf
+		* In Current Web Root Directory Section
+			AllowOverride All
+			Options -Indexes
+			ServerSignature off
+		* Restart Apache
+	5.3 .htaccess File
+		* If Still Listing Shows then edit .htaccess file in web root and put "Options -Indexes" here.
+		* block accessing .htaccess file
+			<FileMatch "^\.ht">
+				Require all denied
+			<FileMatch>
+	5.4 Change Apache user and group
+		* create group -> groupadd {group-name}
+		* add user to group -> useradd -g {group-name} {user-name}
+		* change root folder ownership -> chown -R {user-name}:{group-name} /{web-root}
+		* modify apache config file -> change user and group
+		* Restart Apache
+
 ## Related to Oracle Cloud VM Instanses
 	
 	* sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
